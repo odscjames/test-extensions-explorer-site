@@ -26,7 +26,8 @@ if [ ! -d ".ve" ]; then
   virtualenv .ve -p python3
 fi
 source .ve/bin/activate
-ls -al 
+ls -al
+pwd
 pip install -r requirements.txt
 deactivate
 cd ..
