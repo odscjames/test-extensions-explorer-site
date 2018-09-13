@@ -5,8 +5,9 @@ set -e
 echo "Get or update extensions-data-collector repo"
 if [ -d "extensions-data-collector" ]; then
   cd extensions-data-collector
-  pwd
   git pull
+  ls -al
+  pwd
   cd ..
 else
   git clone https://github.com/open-contracting/extensions-data-collector.git extensions-data-collector
@@ -15,8 +16,9 @@ fi
 echo "Get or update extension-explorer repo"
 if [ -d "extension-explorer" ]; then
   cd extension-explorer
-  pwd
   git pull
+  ls -al
+  pwd
   cd ..
 else
   git clone https://github.com/open-contracting/extension-explorer.git extension-explorer
