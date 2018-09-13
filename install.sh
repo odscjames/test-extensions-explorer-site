@@ -29,3 +29,13 @@ source .ve/bin/activate
 pip install -r requirements.txt
 deactivate
 cd ..
+
+# Create and update virtualenv for extension-explorer repo
+cd extension-explorer
+if [ ! -d ".ve" ]; then
+  virtualenv .ve -p python3
+fi
+source .ve/bin/activate
+pip install -r requirements.txt
+deactivate
+cd ..
