@@ -5,6 +5,7 @@ set -e
 echo "Get or update extensions-data-collector repo"
 if [ -d "extensions-data-collector" ]; then
   cd extensions-data-collector
+  pwd
   git pull
   cd ..
 else
@@ -14,6 +15,7 @@ fi
 echo "Get or update extension-explorer repo"
 if [ -d "extension-explorer" ]; then
   cd extension-explorer
+  pwd
   git pull
   cd ..
 else
@@ -25,6 +27,8 @@ cd extensions-data-collector
 if [ ! -d ".ve" ]; then
   virtualenv .ve -p python3
 fi
+ls -al
+pwd
 source .ve/bin/activate
 ls -al
 pwd
@@ -38,6 +42,8 @@ if [ ! -d ".ve" ]; then
   virtualenv .ve -p python3
 fi
 source .ve/bin/activate
+ls -al
+pwd
 pip install -r requirements.txt
 deactivate
 cd ..
