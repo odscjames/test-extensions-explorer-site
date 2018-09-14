@@ -25,11 +25,7 @@ cd extensions-data-collector/repo
 if [ ! -d ".ve" ]; then
   virtualenv .ve -p python3
 fi
-ls -al
-pwd
 source .ve/bin/activate
-ls -al
-pwd
 pip install -r requirements.txt
 deactivate
 cd ../..
@@ -40,8 +36,6 @@ if [ ! -d ".ve" ]; then
   virtualenv .ve -p python3
 fi
 source .ve/bin/activate
-ls -al
-pwd
 pip install -r requirements.txt
 deactivate
 cd ../..
