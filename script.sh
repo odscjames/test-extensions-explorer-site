@@ -8,5 +8,11 @@ source .ve/bin/activate
 python cli.py
 cd ..
 
+# freeze site
+cd extension-explorer
+source .ve/bin/activate
+python freeze.py
+cd ..
+
 # temp show output
-ls -al extensions-data-collector/output_dir
+find extension-explorer/extension_explorer/build
