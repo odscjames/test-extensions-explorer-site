@@ -2,6 +2,8 @@
 
 set -e
 
+find .
+
 echo "Get or update extensions-data-collector repo"
 if [ -d "extensions-data-collector" ]; then
   cd extensions-data-collector
