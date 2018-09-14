@@ -4,7 +4,7 @@ set -e
 
 echo "Get or update extensions-data-collector repo"
 if [ -d "extensions-data-collector/repo" ]; then
-  cd extensions-data-collector/reop
+  cd extensions-data-collector/repo
   git pull
   cd ../..
 else
